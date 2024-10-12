@@ -49,31 +49,17 @@
 <body>
     <div class="container">
         <h1>Family Form</h1>
-        <form id="familyForm">
+        <form id="familyForm" action="/family" method="POST">
             <div class="form-group">
-                <label for="familyId">family_id:</label>
-                <input type="text" id="familyId" name="familyId" required>
-            </div>
-            <div class="form-group">
-                <label for="family">family:</label>
+                <label for="family">Family:</label>
                 <input type="text" id="family" name="family" required>
             </div>
             <div class="form-group">
-                <label for="name">name:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
             </div>
             <button type="submit" class="submit-button">Submit</button>
         </form>
     </div>
-    <script>
-        document.getElementById('familyForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            var family = document.getElementById('family').value;
-            var name = document.getElementById('name').value;
-            
-            alert('Family: ' + family + '\\nName: ' + name);
-        });
-    </script>
 </body>
 </html>
