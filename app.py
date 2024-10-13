@@ -70,7 +70,10 @@ def clan_member():
     else:
         # If it's not a POST request, you can display a form or a message
         return render_template('clan_member.html')
-
+    
+@app.route('/submit-request', method=['POST'])
+def submit_request():
+# get gorm data
 
 
 if __name__ == "__main__":
