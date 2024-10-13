@@ -42,6 +42,32 @@ def add_family():
     else:
         # If it's not a POST request, you can display a form or a message
         return render_template('main.html')
+    
+@app.route('/clan_member', methods=['GET', 'POST'])
+def clan_member():
+    if request.method == 'POST':
+        # Get family details from the form
+        family_id = request.form.get('family_id')
+        family = request.form.get('family')
+        name = request.form.get('name')
+
+        # Create a cursor object
+        cur = mysql.connection.cursor()
+
+        # Execute the SQL query
+        cur.execute("INSERT INTO imamai_family(family_id, family, name) VALUES (%s, %s, %s)", (family_id, family, name))
+
+        # Commit to the database
+        mysql.connection.commit()
+
+        # Close the connection
+        cur.close()
+
+        # Return a success message
+        return 'family added successfully!'
+    else:
+        # If it's not a POST request, you can display a form or a message
+        return render_template('clan_member.html')
 
 
 
