@@ -84,10 +84,27 @@ def submit_request():
         cur = mysql.connection.cursor()
         cur.execute("SELECT * FROM clan_member WHERE name = %s", (name,))
         results = cur.fetchall()
-        print(results)
+        #print(results)
+        column_names = [col[0] for col in cur.description]
+
+        results_list = []
+        for row in results:
+            row_map = {}
+        for index, val in enumerate(row):
+            row_map[column_names[index]] = val
+        results_list.append(row_map)
+
         cur.close()
-        pprint(jsonify(response_data))
-        return jsonify(response_data)
+        # Check if we got any results
+        if results:
+            # Return the results as JSON
+            pprint(jsonify(results_list))
+            return jsonify(results_list)
+        else:
+            # Return a message if no data was found
+            print( 'No matching records found')
+        #pprint(jsonify(response_data))
+        #return jsonify(response_data)
     else:
         # Handle GET request
         return render_template('search.html')
