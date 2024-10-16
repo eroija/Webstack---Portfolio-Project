@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 from flask_mysqldb import MySQL
+from pprint import pprint
 #import MySQLdb.cursors
 
 app = Flask(__name__)
@@ -21,15 +22,13 @@ def add_family():
     
     if request.method == 'POST':
         # Get family details from the form
-        family_id = request.form.get('family_id')
         family = request.form.get('family')
-        name = request.form.get('name')
 
         # Create a cursor object
         cur = mysql.connection.cursor()
 
         # Execute the SQL query
-        cur.execute("INSERT INTO imamai_family(family_id, family, name) VALUES (%s, %s, %s)", (family_id, family, name))
+        cur.execute("INSERT INTO imamai_family(family) VALUES (%s)", (family,))
 
         # Commit to the database
         mysql.connection.commit()
@@ -71,9 +70,28 @@ def clan_member():
         # If it's not a POST request, you can display a form or a message
         return render_template('clan_member.html')
     
-@app.route('/submit-request', method=['POST'])
+@app.route('/submit', methods=['GET', 'POST'])
 def submit_request():
-# get gorm data
+    if request.method == 'POST':
+        # Handle POST request
+        family = request.form.get('family')
+        name = request.form.get('name')
+        # Process the data (e.g., save to database)
+        response_data = {
+            'family': family,
+            'name': name
+        }
+        cur = mysql.connection.cursor()
+        cur.execute("SELECT * FROM clan_member WHERE name = %s", (name,))
+        results = cur.fetchall()
+        print(results)
+        cur.close()
+        pprint(jsonify(response_data))
+        return jsonify(response_data)
+    else:
+        # Handle GET request
+        return render_template('search.html')
+    
 
 
 if __name__ == "__main__":
