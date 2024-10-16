@@ -1,7 +1,7 @@
-# Project Title
+PROJECT NAME: FAMILY NETWORK APP
 
 ## Description
-A brief description of what the project is about, the problem it solves, and why it exists.
+The family network app will enable members of our extetnded family to connect with each other from various locations
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,6 +13,6 @@ A brief description of what the project is about, the problem it solves, and why
 ## Installation
 Detailed instructions on how to install and set up the project. Include prerequisites, step-by-step installation guides, and any other relevant information.
 ```bash
-# Example command
-git clone https://github.com/yourusername/yourproject.git
-cd yourproject
+#command
+git clone git@github.com:eroija/Webstack---Portfolio-Project.git
+cd Webstack---Portfolio-Project
