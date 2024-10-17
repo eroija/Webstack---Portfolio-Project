@@ -93,3 +93,18 @@ The Family Network App is licensed under the MIT License. This license permits p
 For the full license text, please refer to the MIT License.
 
 This clear and concise description ensures that anyone using or contributing to your project knows their rights and obligations.
+
+Acknowledgements
+I would like to extend our deepest gratitude to the following individuals and organizations who made the development of the Family Network App possible:
+Mark Ekisa, Lelia Amoit and Walter Imamai.
+
+Contact
+If you have any questions, suggestions, or issues regarding the Family Network App, please feel free to contact the project maintainer:
+
+Email: eroija@gmail.com
+
+GitHub Issues: https://github.com/eroija/Webstack---Portfolio-Project/issues
+
+Twitter: https://x.com/EImamai
+
+I appreciate your feedback and are here to help!
