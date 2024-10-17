@@ -108,3 +108,5 @@ GitHub Issues: https://github.com/eroija/Webstack---Portfolio-Project/issues
 Twitter: https://x.com/EImamai
 
 I appreciate your feedback and are here to help!
+
+Feel free to tweak and expand on this template as needed to match your project
