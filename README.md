@@ -60,5 +60,29 @@ Description: A detailed description of the issue, including steps to reproduce i
 
 Screenshots: Include any relevant screenshots that illustrate the issue.
 
+Submitting Pull Requests
+Fork the Repository: Fork the project repository to your GitHub account.
 
+Clone the Repository: Clone your forked repository to your local machine.
 
+git clone https://github.com/yourusername/yourproject.git
+cd yourproject
+
+git checkout -b feature/your-feature-name
+
+Make Changes: Implement your changes in the code.
+
+Commit Changes: Commit your changes with a clear and descriptive commit message.
+
+git add .
+git commit -m "feat: Add new feature to improve user experience"
+
+git push origin feature/your-feature-name
+
+Open a Pull Request: Go to the original repository and open a pull request from your forked repository.
+
+Title: A concise summary of the changes.
+
+Description: A detailed description of what you’ve changed and why, including any relevant links or issues.
+
+Respond to Feedback: Be ready to engage in discussions and make additional changes based on feedback from the project maintainers.
