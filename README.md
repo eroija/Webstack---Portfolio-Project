@@ -86,3 +86,10 @@ Title: A concise summary of the changes.
 Description: A detailed description of what you’ve changed and why, including any relevant links or issues.
 
 Respond to Feedback: Be ready to engage in discussions and make additional changes based on feedback from the project maintainers.
+
+License
+The Family Network App is licensed under the MIT License. This license permits personal, academic, and commercial use, modification, and distribution of the software, provided that the original authors are credited.
+
+For the full license text, please refer to the MIT License.
+
+This clear and concise description ensures that anyone using or contributing to your project knows their rights and obligations.
