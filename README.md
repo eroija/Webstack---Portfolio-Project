@@ -46,7 +46,19 @@ def add_family():
         # If it's not a POST request, you can display a form or a message
         return render_template('main.html')
     
+Contributing
+Guidelines for contributing to the project: This part outlines how others can get involved and contribute to your project. It's essential for creating a collaborative environment and ensuring consistency.
 
+Reporting Issues
+Search for Existing Issues: Before reporting a new issue, check if someone else has already reported it to avoid duplicates.
+
+Create a New Issue: If the issue is new, create a detailed report.
+
+Title: A concise summary of the problem.
+
+Description: A detailed description of the issue, including steps to reproduce it, expected behavior, and actual behavior.
+
+Screenshots: Include any relevant screenshots that illustrate the issue.
 
 
 
