@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clan Member Form</title>
     <style>
-        body {
+        body {  /* Styling for the body of the document */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-        .container {
+        .container {  /* Container for centering and styling the form */
             width: 50%;
             margin: 0 auto;
             padding: 20px;
@@ -19,22 +19,22 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
-        h1 {
+        h1 {  /* Styling for the heading */
             text-align: center;
         }
-        .form-group {
+        .form-group {  /* Styling for form groups */
             margin: 10px 0;
         }
-        label {
+        label {  /* Styling for labels */
             display: block;
             margin: 5px 0;
         }
-        input[type="text"], input[type="tel"] {
+        input[type="text"], input[type="tel"] {  /* Styling for text and telephone inputs */
             width: 100%;
             padding: 8px;
             box-sizing: border-box;
         }
-        .submit-button {
+        .submit-button {  /* Styling for the submit button */
             display: block;
             width: 100%;
             padding: 10px;
@@ -49,28 +49,28 @@
 <body>
     <div class="container">
         <h1>Clan Member</h1>
-        <form id="clanMemberForm" action="/clan_member" method="POST">
+        <form id="clanMemberForm" action="/clan_member" method="POST">  <!-- Form with POST method -->
             <div class="form-group">
-                <label for="family">family_id:</label>
-                <input type="text" id="family_id" name="family_id" required>
+                <label for="family">family_id:</label>  <!-- Label for family_id input -->
+                <input type="text" id="family_id" name="family_id" required>  <!-- Text input for family_id -->
             </div>
             <div class="form-group">
-                <label for="name">name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name">name:</label>  <!-- Label for name input -->
+                <input type="text" id="name" name="name" required>  <!-- Text input for name -->
             </div>
             <div class="form-group">
-                <label for="occupation">occupation:</label>
-                <input type="text" id="occupation" name="occupation" required>
+                <label for="occupation">occupation:</label>  <!-- Label for occupation input -->
+                <input type="text" id="occupation" name="occupation" required>  <!-- Text input for occupation -->
             </div>
             <div class="form-group">
-                <label for="phone">phone_number:</label>
-                <input type="tel" id="phone" name="phone" required>
+                <label for="phone">phone_number:</label>  <!-- Label for phone number input -->
+                <input type="tel" id="phone" name="phone" required>  <!-- Telephone input for phone number -->
             </div>
             <div class="form-group">
-                <label for="location">location:</label>
-                <input type="text" id="location" name="location" required>
+                <label for="location">location:</label>  <!-- Label for location input -->
+                <input type="text" id="location" name="location" required>  <!-- Text input for location -->
             </div>
-            <button type="submit" class="submit-button">Submit</button>
+            <button type="submit" class="submit-button">Submit</button>  <!-- Submit button -->
         </form>
     </div>
 </body>
